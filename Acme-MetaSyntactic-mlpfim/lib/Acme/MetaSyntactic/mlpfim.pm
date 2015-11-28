@@ -5,7 +5,9 @@ use warnings;
 
 our $VERSION = '0.0.1';
 
-use parent 'Acme::MetaSyntactic::List';
+use Acme::MetaSyntactic::List;
+
+our @ISA = (qw( Acme::MetaSyntactic::List ));
 
 __PACKAGE__->init();
 
@@ -33,6 +35,7 @@ Wikia wiki: L<http://mlp.wikia.com/wiki/Characters> .
 =cut
 
 __DATA__
+# names
 Apple_Bloom
 Apple_Rose
 Apple_Strudel
@@ -54,7 +57,7 @@ Maud_Pie
 Mr_Cake
 Mrs_Cake
 Nightmare_Moon
-Peacy_Pie
+Peachy_Pie
 Pinkie_Pie
 Pipsqueak
 Pound_Cake
@@ -71,7 +74,7 @@ Rumble
 Sctootaloo
 Shining_Armor
 Silver_Spoon
-Snais
+Snails
 Snips
 Spike
 Starlight_Glimmer
