@@ -5,9 +5,7 @@ use warnings;
 
 our $VERSION = '0.0.1';
 
-use Acme::MetaSyntactic::List;
-
-our @ISA = (qw( Acme::MetaSyntactic::List ));
+use parent 'Acme::MetaSyntactic::List';
 
 __PACKAGE__->init();
 
