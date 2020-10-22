@@ -3,8 +3,6 @@ package Acme::MetaSyntactic::mlpfim;
 use strict;
 use warnings;
 
-our $VERSION = 'v0.0.1';
-
 use parent 'Acme::MetaSyntactic::List';
 
 __PACKAGE__->init();
